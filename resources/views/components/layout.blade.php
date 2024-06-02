@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Job Board</title>
 </head>
-<body class="mx-auto mt-10 max-w-2xl bg-gradient-to-r from-violet-200 text-slate-700 ">
+<body class="mx-auto mt-10 max-w-2xl lg:p-0 px-8 bg-gradient-to-r from-violet-200 text-slate-700 ">
     <nav class="mb-8 flex justify-between text-lg font-medium">
         <ul class="flex space-x-2">
             <li><a href="{{route('jobs.index')}}">Home</a></li>
@@ -28,6 +29,9 @@
             @else
             <li>
                 <a href="{{route('auth.create')}}">Sign In</a>
+            </li>
+            <li>
+                <a href="{{route('register.create')}}">Register</a>
             </li>
             @endauth
         </ul>

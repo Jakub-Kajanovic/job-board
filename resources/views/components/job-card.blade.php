@@ -11,7 +11,7 @@
                 <span class="text-xs text-red-500">Job has been deleted</span>
             @endif
         </div>
-        <div class="flex space-x-1 items-center">
+        <div class="flex lg:flex-row flex-col lg:space-y-0 space-y-2 space-x-1 items-center">
             <x-tag><a href="{{route('jobs.index', [ 'experience' => $job->experience ]) }}">{{Str::ucfirst($job->experience)}}</a></x-tag>
             <x-tag class="rounded-md border px-2 py-1"><a href="{{route('jobs.index' , ['category' => $job->category ]) }}">{{$job->category}}</a></x-tag>
         </div>

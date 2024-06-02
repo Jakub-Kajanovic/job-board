@@ -10,7 +10,7 @@
             </div>
             <div>
                 <div class="mb-1 font-semibold">Salary</div>
-                <div class="flex space-x-2">
+                <div class="flex lg:flex-row flex-col space-y-2 lg:space-y-0 lg:space-x-2">
                     <x-text-input name="min_salary" value="{{request('min_salary')}}" placeholder="From" form-ref="filters" />
                     <x-text-input name="max_salary" value="{{request('max_salary')}}" placeholder="To" form-ref="filters" />
                 </div>
